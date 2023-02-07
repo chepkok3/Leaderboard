@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-weight: 700;
+  font-size: 16px;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.leaderboard-section {
+  margin-top: 8rem;
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+
+.leaderboard-items {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.recent-header {
+  display: flex;
+  gap: 12px;
+}
+
+.refresh-button {
+  margin: 8px;
+  padding: 2px 4px;
+  cursor: pointer;
+}
+
+.recent-scores {
+  margin: auto;
+  padding: 2px;
+  border: 2px solid;
+  list-style-type: none;
+  line-height: 24px;
+}
+
+input {
+  border: 2px solid;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.add-score {
+  margin-left: 3rem;
+  margin-top: 3.5rem;
+}
+
+.form-submit {
+  margin-left: 7.5rem;
+}
+
+#submit {
+  padding: 6px;
+  cursor: pointer;
+}
+
+body > footer {
+  position: sticky;
+  top: 100vh;
+  border: 2px solid black;
+  padding: 16px;
+  margin: 12px;
+  margin-top: 26.5rem;
+}
