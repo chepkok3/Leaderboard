@@ -1,13 +1,28 @@
-import _ from 'lodash';
 import './style.css';
+import { addScore } from './modules/gameApi.js';
+import gameRendered from './modules/gameRender.js';
 
-function component() {
-  const element = document.createElement('div');
+const refreshButton = document.querySelector('.refresh-button');
+const scoresForm = document.querySelector('.scores-form');
 
-  // Lodash, now imported by this script
-  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+scoresForm.addEventListener('submit', async (event) => {
+  event.preventDefault();
+  const user = document.querySelector('#name').value;
+  const score = document.querySelector('#score').value;
+  if (!user || !score) return;
+  const recentScore = {
+    user,
+    score,
+  };
+  addScore(recentScore);
+  scoresForm.reset();
 
-  return element;
-}
-
-document.body.appendChild(component());
+  refreshButton.addEventListener('click', (e) => {
+    e.preventDefault();
+    gameRendered();
+  });
+  // initialize the function "async" when the page completely loads
+  document.addEventListener('DOMContentLoaded', async () => {
+    gameRendered();
+  });
+});
