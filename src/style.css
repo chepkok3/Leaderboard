@@ -8,60 +8,112 @@ body {
   font-weight: 700;
   font-size: 16px;
   box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
+  background-color: beige;
+  font-family: 'Josefin Sans', sans-serif;
+  overflow: scroll;
 }
 
 .leaderboard-section {
   margin-top: 8rem;
+  margin-right: 8rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+  /* width: 30rem; */
+
+  /* margin: 0 auto; */
+}
+
+.scores-table {
+  width: 30%;
+  margin-right: 8rem;
+  padding-right: 24px;
 }
 
 h1 {
   margin-bottom: 1rem;
 }
 
-.leaderboard-items {
+/* .leaderboard-items {
   display: flex;
   gap: 12px;
   justify-content: center;
-}
+} */
 
 .recent-header {
+  width: 100%;
+  background: #344563;
   display: flex;
-  gap: 12px;
+  justify-content: space-between;
+}
+
+.recent-header h2 {
+  margin-right: 8rem;
+  padding-left: 1rem;
 }
 
 .refresh-button {
-  margin: 8px;
-  padding: 2px 4px;
+  font-family: 'Josefin Sans', sans-serif;
+  padding: 6px 8px;
   cursor: pointer;
 }
 
-.recent-scores {
-  margin: auto;
-  padding: 2px;
+.recents-container {
+  max-height: 17.5rem;
+  overflow-y: scroll;
+  width: 20rem;
+
+  /* width: 34rem; */
   border: 2px solid;
   list-style-type: none;
   line-height: 24px;
+  padding-left: 12px;
+  margin: 24px;
+  background-color: #fff;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.recent-list {
+  align-items: center;
+  line-height: 36px;
+
+  /* width: 100%; */
+  list-style-type: none;
+  padding: 12px;
+}
+
+.recent-list:nth-child(odd) {
+  background: rgba(28, 24, 24, 61.4%);
+  color: white;
+}
+
+.user {
+  padding-right: 16px;
 }
 
 input {
   border: 2px solid;
-  font-weight: 700;
+  font-weight: 900;
   font-size: 16px;
+  height: 2rem;
+  width: 16.3rem;
 }
 
 .add-score {
-  margin-left: 3rem;
-  margin-top: 3.5rem;
+  margin-left: 6rem;
+  margin-top: 4rem;
 }
 
 .form-submit {
-  margin-left: 7.5rem;
+  margin-left: 12.4rem;
 }
 
 #submit {
   padding: 6px;
   cursor: pointer;
+  color: #344563;
+  font-family: 'Montserrat Alternates', sans-serif;
 }
 
 body > footer {
@@ -71,4 +123,42 @@ body > footer {
   padding: 16px;
   margin: 12px;
   margin-top: 26.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .leaderboard-section {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .leaderboard-items {
+    margin-top: 8rem;
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+  }
+
+  .recents-container {
+    max-height: 20rem;
+    width: 34rem;
+  }
+
+  .refresh-button {
+    padding: 8px 12px;
+  }
+
+  input {
+    width: 20rem;
+  }
+
+  .add-score {
+    margin-left: 10rem;
+    margin-top: 1.4rem;
+  }
+
+  .form-submit {
+    margin-left: 16rem;
+  }
 }
