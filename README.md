@@ -2,12 +2,11 @@
 
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
   - [Prerequisites](#prerequisites)
+    - [Setup](#setup)
   - [Install](#install)
   - [Usage](#usage)
   - [Run tests](#run-tests)
@@ -17,12 +16,9 @@
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
 # 📖 [Leaderboard] <a name="about-project"></a>
-
-> Describe your project in 1 or 2 sentences.
 
 **[Leaderboard]** is an API based project that utilizes webpack and ES6 features, notably modules. It consumes the Leaderboard API using JavaScript async and await in a way that facilitates sending and receiving data from/to the Leaderboard API.
 
@@ -110,7 +106,9 @@ You can deploy this project using:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[ Other functionalities]**
+- [ ] **[ Adding more functionalities and features like time.]**
+- [ ] **[ Live update of matches played.]**
+- [ ] **[ Styling to make the page more presentable and attractive to users. ]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -130,9 +128,7 @@ Give it a ⭐️ and let me know what you like in particular if you like this pr
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
-
-I would like to thank...
+I would like to thank my coding partners and the Microverse team for the support they accorded to me during the development.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
