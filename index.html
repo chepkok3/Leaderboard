@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leaderboard</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  <script defer src="/main.js"></script></head>
+  <body>
+    <section class="leaderboard-section">
+      <div class="leaderboard-items">
+        <div class="scores-table">
+          <h1>Leaderboard</h1>
+          
+          <div class="recents-container">
+            <div class="recent-header">
+              <h2>Recent scores</h2>
+              <button class="refresh-button">
+                Refresh
+                <i class="fa-solid fa-arrows-rotate"></i>
+              </button>
+            </div>
+            <ul class="recent-scores"></ul>
+          </div>
+        </div>
+
+        <div class="add-score">
+          <h2>Add your score</h2>
+          <form class="scores-form" 
+            <label for="name"></label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              placeholder="Your name"
+            /><br /><br />
+            <label for="score"></label>
+            <input
+              type="text"
+              id="score"
+              name="score"
+              placeholder="Your score"
+              required
+            /><br /><br />
+            <div class="form-submit">
+              <button id="submit" type="submit">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer><small>&copy; Copyright 2023 Stanley Kibor Leaderboard. Rights reserved</small></footer>
+  </body>
+</html>
