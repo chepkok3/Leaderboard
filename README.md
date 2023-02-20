@@ -40,7 +40,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://chepkok3.github.io/Leaderboard/dist/index.html)
+- [Live Demo Link](https://incredible-twilight-f93e2b.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
