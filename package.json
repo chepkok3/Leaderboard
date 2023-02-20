@@ -20,7 +20,7 @@
   "bugs": {
     "url": "https://github.com/chepkok3/Leaderboard/issues"
   },
-  "homepage": "https://github.com/chepkok3/Leaderboard#readme",
+  "homepage": "https://github.com/chepkok3/Leaderboard",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "babel-loader": "^9.1.2",
